@@ -5,7 +5,7 @@
     "Urigo <uri.goldshtein@gmail.com>"
   ],
   "description": "SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS",
-  "main": "build/angular-spinkit.js",
+  "main": ["build/angular-spinkit.js", "build/styles/angular-spinkit.css"],
   "keywords": [
     "spinner",
     "SpinKit",

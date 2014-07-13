@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    clean: ['build/'],
     ngtemplates: {
       angularSpinkit: {
         src: ['src/templates/**.html'],
@@ -14,6 +15,14 @@ module.exports = function(grunt) {
         src: ['src/angular-spinkit.js', 'build/templates.js'],
         dest: 'build/angular-spinkit.js'
       }
+    },
+    copy: {
+      dist: {
+        expand: true,
+        cwd: 'src/',
+        src: 'styles/*.css',
+        dest: 'build/'
+      },
     },
     uglify: {
       options: {
@@ -30,8 +39,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-angular-templates');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task(s).
-  grunt.registerTask('default', ['ngtemplates','concat:dist', 'uglify']);
+  grunt.registerTask('default', ['ngtemplates','concat:dist', 'copy:dist', 'uglify']);
 
 };

@@ -383,61 +383,6 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
 
 
   $templateCache.put('src/templates/waveSpinner.html',
-    "<style>\n" +
-    "  .wave-spinner {\n" +
-    "    margin: 100px auto;\n" +
-    "    width: 50px;\n" +
-    "    height: 30px;\n" +
-    "    text-align: center;\n" +
-    "    font-size: 10px;\n" +
-    "  }\n" +
-    "\n" +
-    "  .wave-spinner > div {\n" +
-    "    background-color: #333;\n" +
-    "    height: 100%;\n" +
-    "    width: 6px;\n" +
-    "    display: inline-block;\n" +
-    "\n" +
-    "    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;\n" +
-    "    animation: stretchdelay 1.2s infinite ease-in-out;\n" +
-    "  }\n" +
-    "\n" +
-    "  .wave-spinner .rect2 {\n" +
-    "    -webkit-animation-delay: -1.1s;\n" +
-    "    animation-delay: -1.1s;\n" +
-    "  }\n" +
-    "\n" +
-    "  .wave-spinner .rect3 {\n" +
-    "    -webkit-animation-delay: -1.0s;\n" +
-    "    animation-delay: -1.0s;\n" +
-    "  }\n" +
-    "\n" +
-    "  .wave-spinner .rect4 {\n" +
-    "    -webkit-animation-delay: -0.9s;\n" +
-    "    animation-delay: -0.9s;\n" +
-    "  }\n" +
-    "\n" +
-    "  .wave-spinner .rect5 {\n" +
-    "    -webkit-animation-delay: -0.8s;\n" +
-    "    animation-delay: -0.8s;\n" +
-    "  }\n" +
-    "\n" +
-    "  @-webkit-keyframes stretchdelay {\n" +
-    "    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }\n" +
-    "    20% { -webkit-transform: scaleY(1.0) }\n" +
-    "  }\n" +
-    "\n" +
-    "  @keyframes stretchdelay {\n" +
-    "    0%, 40%, 100% {\n" +
-    "      transform: scaleY(0.4);\n" +
-    "      -webkit-transform: scaleY(0.4);\n" +
-    "    }  20% {\n" +
-    "         transform: scaleY(1.0);\n" +
-    "         -webkit-transform: scaleY(1.0);\n" +
-    "       }\n" +
-    "  }\n" +
-    "</style>\n" +
-    "\n" +
     "<div class=\"wave-spinner\">\n" +
     "  <div class=\"rect1\"></div>\n" +
     "  <div class=\"rect2\"></div>\n" +
